@@ -11,25 +11,25 @@ const Post = forwardRef(({ displayName, username, verified, text, image, avatar 
     return (
       <div className="post" ref={ref}>
         <div className="post__avatar">
-          <Avatar src={avatar} />
+          <Avatar src="https://mui.com/static/images/avatar/1.jpg" />
         </div>
         <div className="post__body">
           <div className="post__header">
             <div className="post__headerText">
               <h3>
-                {displayName}{""}
+                Ayush tawar
                 <span className="post__headerSpecial">
-                   { verified && <VerifiedUserIcon className="post__badge" />}
-                   @{username}
+                    <VerifiedUserIcon className="post__badge" />
+                   @aayuuushhhh
                 </span>
               </h3>
             </div>
             <div className="post__headerDescription">
               {/* can't write the content within the post */}
-              <p>{text}</p>
+              <p>Hey, My twitter clone is up and running!</p>
             </div>
           </div>
-          <img src={image} alt="" />
+          <img src="" alt="" />
           <div className="post__footer">
             <ChatBubbleOutlineIcon fontSize="small" />
             <RepeatIcon fontSize="small" />
